@@ -14,8 +14,6 @@ class LRU_cache:
         self.head.next = self.tail
         self.tail.prev = self.head
 
-
-
     def _add(self, node):
         p = self.tail.prev
         p.next = node
@@ -55,8 +53,12 @@ our_cache.set(2, 2);
 our_cache.set(3, 3);
 our_cache.set(4, 4);
 print(our_cache.get(1))
+# expected answer is 1
 print(our_cache.get(2))
+# expected answer is 2
 print(our_cache.get(9))
+# expected answer is -1 as 9 is not in our cache memory
 our_cache.set(5, 5)
 our_cache.set(6, 6)
 print(our_cache.get(3))
+# expected answer is -1 as 3 is not in our cache memory
