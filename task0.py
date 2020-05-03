@@ -1,22 +1,24 @@
-def sqrt(x):
-    if (x == 0 or x == 1):
-        return x
-    start = 1
-    end = x
-    while (start <= end):
-        mid = (start + end) // 2
-        if (mid * mid == x):
-            return mid
-        if (mid * mid < x):
-            start = mid + 1
-            ans = mid
-        else:
-            end = mid - 1
-    return ans
-    pass
+"""
+Read file into texts and calls.
+It's ok if you don't understand how to read files.
+"""
+import csv
+with open('texts.csv', 'r') as f:
+    reader = csv.reader(f)
+    texts = list(reader)
 
-print ("Pass" if  (3 == sqrt(9)) else "Fail")
-print ("Pass" if  (0 == sqrt(0)) else "Fail")
-print ("Pass" if  (4 == sqrt(16)) else "Fail")
-print ("Pass" if  (1 == sqrt(1)) else "Fail")
-print ("Pass" if  (5 == sqrt(27)) else "Fail")
+with open('calls.csv', 'r') as f:
+    reader = csv.reader(f)
+    calls = list(reader)
+print(f"First record of texts, {texts[0][0]} texts {texts[0][1]} at time {texts[0][2]}")
+print(f"Last record of calls, {calls[-1][0]} calls {calls[-1][1]} at time {calls[0][2]}, lasting {calls[-1][3]} seconds")
+
+
+"""
+TASK 0:
+What is the first record of texts and what is the last record of calls?
+Print messages:
+"First record of texts, <incoming number> texts <answering number> at time <time>"
+"Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
+"""
+
