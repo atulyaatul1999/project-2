@@ -1,0 +1,24 @@
+Task0-
+->Time complexity of Task0 is- O(1) as we are accessing the elements of the list and its worst time complexity is O(1) as we have used index directly.
+
+
+Task1-
+->Time complexity of Task0 is- O(n^2) as we have use the loop and inside loop we are adding an element in the set, for iterating in loop time complexity is -O(n) where n is total maximum of number of sublists in the list calls and texts and the worst time complexity of adding an element in set in O(n)
+and we are inserting inside the loop so the overall worst time complexity of Task1 is O(n^2)
+
+
+Task2-
+->Time complexity of Task0 is- O(n^2) as first we are having a for loop to iterate in list calls and in this loop we are searching for a key in the list d.key() and its worst time complexity is O(n) so the overall worst time complexity is O(n^2)
+considering the number of sublists in calls as n-> the total number of element in the list calls is n
+
+Task3-
+->Time complexity of Task0 is- O(n^2) as first we are having a for loop to iterate in list calls and in this loop we are inserting a element in the set and worst time complexity of adding an element in the set is O(n) so overall worst time complexity os O(n^2)
+considering the number of sublists in calls as n-> the total number of element in the list calls is n
+
+
+Task4-
+->Time complexity of Task0 is- O(n^2) as we have use the loop and inside loop we are adding an element in the set, for iterating in loop time complexity is -O(n) where n is total maximum of number of sublists in the list calls and texts and the worst time complexity of adding an element in set in O(n)
+and we are inserting inside the loop so the overall worst time complexity of Task1 is O(n^2)
+
+
+# in tasks Task3 and Task4 we, uses a function sorted but we do not have to consider this as the time complexity of rest program is more then this.
